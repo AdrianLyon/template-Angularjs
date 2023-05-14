@@ -1,0 +1,71 @@
+<div class="panel">
+    <div class="panel-heading col-sm-12">
+        <div class="title">
+            <h3>{{title}}</h3>
+        </div>
+    </div>
+    <div class="panel-body col-sm-12">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr>
+                    <th>Number</th>
+                    <th>Date</th>
+                </tr>
+                <tr">
+                    <td>{{entity.Number}}</td>
+                    <td>{{entity.Date | date}}</td>
+                    </tr>
+                    <tr>
+                        <th>Amount</th>
+                        <th>Order Number</th>
+                    </tr>
+                    <tr>
+                        <td>{{entity.Amount | currency}}</td>
+                        <td>{{entity.OrderNumber}}</td>
+                    </tr>
+            </table>
+        </div>
+        <div>
+            <!-- <input type="button"><i class="fas fa-list"></i></input> <br>
+            <input type="checkbox"><i class="fas fa-id-card"></i></input> -->
+            <button ng-class="{'fas fa-id-card':IsVisible, 'fas fa-list':!IsVisible}" ng-click="ShowHide()"> </button>
+        </div>
+        <div class="table-responsive" ng-show="IsVisible">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Part Number</th>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Handling</th>
+                        <th>Sales Tax</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in entity.InvoiceDetail">
+                        <td>{{item.PartNumber}}</td>
+                        <td>{{item.Item}}</td>
+                        <td>{{item.Quantity}}</td>
+                        <td>{{item.Handling | currency}}</td>
+                        <td>{{item.SalesTax | currency}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-responsive" ng-show="!IsVisible">
+            <div class="card-group">
+                <div class="card" ng-repeat="item in entity.InvoiceDetail">
+                    <div class="card-body">
+                        <h5 class="card-title">Part Number: {{item.PartNumber}}</h5>
+                        <p class="card-text">Item: {{item.Item}}, Quantity:{{item.Quantity}} <br> Handling:
+                            {{item.Handling | currency}}, Sales Tax: {{item.SalesTax | currency}}</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

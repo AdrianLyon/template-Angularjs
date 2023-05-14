@@ -1,0 +1,41 @@
+<div class="panel">
+    <div class="panel-heading col-sm-12">
+        <div class="title">
+            <h3>{{title}}</h3>
+        </div>
+    </div>
+    <div class="panel-body col-sm-12">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <tr>
+                    <th>Id</th>
+                    <th>Number</th>
+                    <th>Date</th>
+                    <th>DueDate</th>
+                    <th>Account Number</th>
+                    <th>Amount</th>
+                    <th>Order Number</th>
+                    <th>Sub Total</th>
+                    <th>Handling</th>
+                    <th>Sales Tax</th>
+                    <th>Actions</th>
+                </tr>
+                <tr ng-repeat="item in entities">
+                    <td>{{item.Id}}</td>
+                    <td>{{item.Number}}</td>
+                    <td>{{item.Date | date}}</td>
+                    <td>{{item.DueDate | date}}</td>
+                    <td>{{item.AccountNumber}}</td>
+                    <td>{{item.Amount | currency}}</td>
+                    <td>{{item.OrderNumber}}</td>
+                    <td>{{item.SubTotal | currency}}</td>
+                    <td>{{item.Handling | currency}}</td>
+                    <td>{{item.SalesTax | currency}}</td>
+                    <td>
+                        <a href="#/invoice/{{item.Id}}/view"> View</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

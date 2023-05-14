@@ -1,0 +1,127 @@
+[
+    {
+        "Id": 1,
+        "Number": "Invoice-01",
+        "Date": "2023-04-29T06:02:37.590Z",
+        "DueDate": "2023-04-29T06:02:37.590Z",
+        "AccountNumber": "01-N",
+        "Amount": 8920,
+        "OrderNumber": "iN-001",
+        "SubTotal": 8000,
+        "Handling": 900,
+        "SalesTax": 20,
+        "InvoiceDetail": [
+            {
+                "PartNumber": "inv-01",
+                "Item": "tornillos",
+                "Quantity": 25,
+                "UnitPrice": 6,
+                "Handling": 23,
+                "SalesTax": 2,
+                "InvoiceId": 1
+            },
+            {
+                "Id": 2,
+                "PartNumber": "inv-01",
+                "Item": "tuerc",
+                "Quantity": 3,
+                "UnitPrice": 76,
+                "Handling": 34,
+                "SalesTax": 2,
+                "InvoiceId": 1
+            },
+            {
+                "Id": 3,
+                "PartNumber": "inv-01",
+                "Item": "tanck",
+                "Quantity": 8,
+                "UnitPrice": 8,
+                "Handling": 22,
+                "SalesTax": 2,
+                "InvoiceId": 1
+            },
+            {
+                "Id": 3,
+                "PartNumber": "inv-01",
+                "Item": "tanck",
+                "Quantity": 8,
+                "UnitPrice": 8,
+                "Handling": 22,
+                "SalesTax": 2,
+                "InvoiceId": 1
+            }
+        ]
+    },
+    {
+        "Id": 2,
+        "Number": "Invoice-02",
+        "Date": "2023-04-29T06:03:02.920Z",
+        "DueDate": "2023-04-29T06:03:02.920Z",
+        "AccountNumber": "02-N",
+        "Amount": 520,
+        "OrderNumber": "iN-002",
+        "SubTotal": 400,
+        "Handling": 100,
+        "SalesTax": 20,
+        "InvoiceDetail": [
+            {
+                "Id": 4,
+                "PartNumber": "inv-02",
+                "Item": "cos",
+                "Quantity": 33,
+                "UnitPrice": 6,
+                "Handling": 23,
+                "SalesTax": 2,
+                "InvoiceId": 2
+            }
+        ]
+    },
+    {
+        "Id": 3,
+        "Number": "Invoice-03",
+        "Date": "2023-04-29T06:03:17.440Z",
+        "DueDate": "2023-04-29T06:03:17.440Z",
+        "AccountNumber": "03-N",
+        "Amount": 77.95,
+        "OrderNumber": "iN-003",
+        "SubTotal": 60,
+        "Handling": 5,
+        "SalesTax": 5.95,
+        "InvoiceDetail": [
+            {
+                "Id": 5,
+                "PartNumber": "inv-03",
+                "Item": "dfsd",
+                "Quantity": 1,
+                "UnitPrice": 45,
+                "Handling": 55,
+                "SalesTax": 2,
+                "InvoiceId": 3
+            }
+        ]
+    },
+    {
+        "Id": 4,
+        "Number": "Invoice-04",
+        "Date": "2023-04-29T06:03:27.366Z",
+        "DueDate": "2023-04-29T06:03:27.366Z",
+        "AccountNumber": "04-N",
+        "Amount": 920,
+        "OrderNumber": "iN-004",
+        "SubTotal": 800,
+        "Handling": 100,
+        "SalesTax": 20,
+        "InvoiceDetail": [
+            {
+                "Id": 6,
+                "PartNumber": "inv-04",
+                "Item": "werwe",
+                "Quantity": 5,
+                "UnitPrice": 3,
+                "Handling": 21,
+                "SalesTax": 2,
+                "InvoiceId": 4
+            }
+        ]
+    }
+]
